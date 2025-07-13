@@ -1,0 +1,296 @@
+/* Vital Holistic Wellness Style - Inspired by Provided Flyer */
+
+/* Import Google Fonts: Lora for headings, Quicksand for body */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Quicksand:wght@400;500&display=swap');
+
+:root {
+  --bg-main: #e5d6c8;
+  --bg-accent: #ede7de;
+  --oval-bg: #fff9f3;
+  --text-main: #7e5b46;
+  --text-title: #6f4e37;
+  --price-bg: #e7e1d6;
+  --price-text: #8a644a;
+  --white: #ffffff;
+  --border-radius: 24px;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Quicksand', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.12rem;
+}
+
+header {
+  text-align: center;
+  padding: 2.6rem 1rem 1.2rem 1rem;
+  background: var(--bg-main);
+  border-bottom: 2px solid #dac7ba;
+}
+
+header h1 {
+  font-family: 'Lora', serif;
+  font-size: 2.7rem;
+  letter-spacing: 0.09em;
+  color: var(--text-title);
+  margin-bottom: 0.2em;
+}
+header h2 {
+  font-family: 'Lora', serif;
+  color: var(--text-title);
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  margin: 0.2em 0 0.9em 0;
+}
+
+header nav {
+  margin-top: 1.1em;
+}
+
+header nav a {
+  color: var(--text-title);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Quicksand', Arial, sans-serif;
+  margin: 0 1.2em;
+  font-size: 1.1rem;
+  padding: 0.3em 0.7em;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+
+header nav a.active,
+header nav a:hover {
+  background: var(--oval-bg);
+  color: var(--text-main);
+}
+
+main {
+  max-width: 760px;
+  margin: 2.5rem auto 2rem auto;
+  padding: 2rem 1.2rem 2rem 1.2rem;
+  background: var(--oval-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 22px 0 rgba(160, 130, 97, 0.09);
+}
+
+h2, h3, h4 {
+  font-family: 'Lora', serif;
+  color: var(--text-title);
+  margin-top: 0.7em;
+}
+
+h2 {
+  font-size: 2.05rem;
+  margin-bottom: 0.7em;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  padding-left: 1.1em;
+}
+
+li {
+  margin-bottom: 0.45em;
+}
+
+.flyer-oval {
+  background: var(--white);
+  border-radius: 60% / 40%;
+  padding: 2.4em 1.1em;
+  margin: 2.5em 0 2.5em 0;
+  box-shadow: 0 2px 18px 0 rgba(160, 130, 97, 0.09);
+  text-align: center;
+  font-family: 'Lora', serif;
+  color: var(--text-title);
+  font-size: 1.12rem;
+}
+.oval-offer ul {
+  columns: 2;
+  list-style: disc inside;
+  color: var(--text-main);
+  font-family: 'Lora', serif;
+  font-size: 1.09rem;
+}
+.oval-offer strong {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.pricing-section {
+  display: flex;
+  gap: 1.2em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5em;
+}
+
+.price-bubble {
+  background: var(--price-bg);
+  border-radius: 50% / 47%;
+  min-width: 220px;
+  max-width: 280px;
+  padding: 1.8em 1em;
+  text-align: center;
+  font-family: 'Lora', serif;
+  color: var(--price-text);
+  box-shadow: 0 2px 12px 0 rgba(160, 130, 97, 0.12);
+  margin: 0.7em 0;
+}
+
+.price-bubble h4 {
+  font-size: 1.13rem;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+}
+
+.price-bubble .price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-title);
+  margin: 0.8em 0 0.5em 0;
+}
+
+.complete-hijama {
+  background: var(--bg-accent);
+  border-radius: 20px;
+  font-family: 'Lora', serif;
+  color: var(--text-title);
+  margin: 1.5em auto;
+  text-align: center;
+  padding: 1.2em 1em;
+  font-size: 1.08rem;
+  max-width: 80%;
+  font-weight: bold;
+}
+
+.flyer-note, .callout, .success-msg {
+  background: var(--white);
+  border-radius: 16px;
+  color: var(--text-title);
+  font-size: 1rem;
+  padding: 1em 1.1em;
+  margin: 1.5em 0 1em 0;
+  text-align: center;
+  font-family: 'Lora', serif;
+  box-shadow: 0 1px 6px 0 rgba(160, 130, 97, 0.12);
+}
+
+.btn, input[type="submit"], button {
+  background: var(--text-title);
+  color: var(--white);
+  border: none;
+  border-radius: 18px;
+  padding: 0.65em 2em;
+  font-size: 1.13rem;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1.2em 0 0 0;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 10px 0 rgba(160, 130, 97, 0.07);
+}
+
+.btn:hover, input[type="submit"]:hover, button:hover {
+  background: #a17d5e;
+  color: var(--white);
+}
+
+footer {
+  padding: 1.7em 0 1.7em 0;
+  background: var(--bg-main);
+  text-align: center;
+  font-size: 1.11rem;
+  color: var(--text-title);
+  font-family: 'Lora', serif;
+  margin-top: 2.2em;
+  border-top: 1.5px solid #dac7ba;
+}
+
+.contact-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 1.2em;
+}
+.contact-info {
+  flex: 1 1 270px;
+  background: var(--bg-accent);
+  padding: 22px 15px;
+  border-radius: 18px;
+  color: var(--text-main);
+  min-width: 215px;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+}
+.contact-info h3 {
+  margin-top: 0;
+}
+.gmap {
+  margin-top: 14px;
+}
+.contact-form {
+  flex: 2 1 340px;
+  background: var(--white);
+  padding: 22px 15px;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(160, 130, 97, 0.07);
+  min-width: 230px;
+  box-sizing: border-box;
+}
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+.form-row .half {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input, .contact-form textarea {
+  border: 1.5px solid #c2b2a3;
+  border-radius: 7px;
+  padding: 0.6em 0.7em;
+  font-size: 1rem;
+  font-family: 'Quicksand', Arial, sans-serif;
+  margin-bottom: 0.7em;
+  background: var(--bg-accent);
+  color: var(--text-main);
+  transition: border 0.2s;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  border: 1.7px solid var(--text-title);
+  outline: none;
+}
+.success-msg {
+  background: #f1ede8;
+  color: #6e4e36;
+  border: 1.5px solid #d1c3b6;
+  border-radius: 8px;
+  margin-top: 14px;
+  font-family: 'Lora', serif;
+}
+
+@media (max-width: 900px) {
+  main { padding: 1.2rem 0.3rem; }
+  .contact-page { flex-direction: column; gap: 22px; }
+  .pricing-section { flex-direction: column; gap: 2em; }
+  .oval-offer ul { columns: 1; }
+}
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+  .oval-offer, .flyer-oval { padding: 1.1em 0.6em; }
+  .price-bubble { min-width: 90%; max-width: 100%; padding: 1.3em 0.6em; }
+}
