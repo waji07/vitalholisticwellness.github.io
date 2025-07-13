@@ -226,7 +226,7 @@ footer {
 .contact-info {
   flex: 1 1 270px;
   background: var(--bg-accent);
-  padding: 22px 15px;
+  padding: 22px 22px;
   border-radius: 18px;
   color: var(--text-main);
   min-width: 215px;
